@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_score_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zhbit.soft.myapplication.ScoreShow">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/wood"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            app:srcCompat="@drawable/hero"
+            android:id="@+id/imageView2"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:scaleType="fitXY" />
+
+        <ListView
+            android:id="@+id/ListView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="15"
+            android:dividerHeight="1dp"
+            android:divider="@color/colorRed"
+            />
+
+        <Button
+            android:text="返回主界面"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button3"
+            android:id="@+id/back" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorGrey"
+    tools:context="com.zhbit.soft.myapplication.MainActivity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/life2"
+                    android:layout_alignTop="@+id/life1"
+                    android:layout_toStartOf="@+id/life1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/life3"
+                    android:layout_alignTop="@+id/life2"
+                    android:layout_toStartOf="@+id/life2" />
+
+                <TextView
+                    android:text="2"
+                    android:textColor="@color/colorRed"
+                    android:textSize="120px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/life3" />
+
+                <TextView
+                    android:text="0"
+                    android:textSize="100px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/score"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    android:id="@+id/life1"
+                    android:layout_alignBottom="@+id/score"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <TextView
+                android:text="绿"
+                android:textStyle="bold"
+                android:textSize="450px"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:id="@+id/relativeLayout">
+
+                <Button
+                    android:text="红"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:id="@+id/btnred"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp" />
+
+                <Button
+                    android:text="黄"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:id="@+id/btnyellow"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="12dp" />
+
+                <Button
+                    android:text="蓝"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnblue"
+                    android:background="@drawable/button"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:text="绿"
+                    android:background="@drawable/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnred"
+                    android:layout_alignStart="@+id/btnred"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btngreen" />
+
+                <Button
+                    android:text="紫"
+                    android:background="@drawable/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnpurple"
+                    android:layout_alignStart="@+id/btnyellow"
+                    android:layout_alignBottom="@+id/btngreen" />
+
+                <Button
+                    android:text="黑"
+                    android:background="@drawable/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/btnpurple"
+                    android:layout_alignStart="@+id/btnblue"
+                    android:id="@+id/btnblack" />
+
+                <Button
+                    android:text="白"
+                    android:background="@drawable/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnpurple"
+                    android:layout_alignEnd="@+id/btnpurple"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/btnwhite" />
+
+                <Button
+                    android:text="橙"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnorange"
+                    android:background="@drawable/button3"
+                    android:layout_alignBaseline="@+id/btnwhite"
+                    android:layout_alignBottom="@+id/btnwhite"
+                    android:layout_alignStart="@+id/btnblack" />
+
+                <Button
+                    android:text="粉"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnpink"
+                    android:background="@drawable/button3"
+                    android:layout_alignBaseline="@+id/btnorange"
+                    android:layout_alignBottom="@+id/btnorange"
+                    android:layout_alignStart="@+id/btngreen" />
+
+            </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

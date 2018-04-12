@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginStart="50px"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textname"
+            android:maxEms="10"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:gravity="left"
+             />
+
+        <TextView
+            android:text="Score"
+            android:textColor="@color/colorRed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textscore"
+            android:maxEms="4"
+            android:layout_weight="1"
+            android:gravity="left"
+             />
+
+        <TextView
+            android:text="Date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textdate"
+            android:maxEms="10"
+            android:layout_weight="1"
+            android:gravity="left"
+             />
+    </LinearLayout>
+</LinearLayout>

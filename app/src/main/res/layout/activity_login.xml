@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    tools:context="com.zhbit.soft.myapplication.Login">
+
+    <LinearLayout
+        android:background="@color/colorGrey"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/title"
+            android:id="@+id/imageView3"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Created By 五彩镔Fun        v2.0"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/t_animationlist"
+            android:id="@+id/imageView"
+            android:layout_weight="7.5" />
+
+        <Button
+            android:text="开始游戏"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/star"
+            android:background="@drawable/button"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:text="积分榜"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scoreshow2"
+            android:background="@drawable/button2"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:text="退出"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/exit"
+            android:background="@drawable/button3"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+</RelativeLayout>
